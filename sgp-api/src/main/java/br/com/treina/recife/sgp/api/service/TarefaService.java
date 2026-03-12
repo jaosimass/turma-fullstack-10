@@ -13,11 +13,11 @@ import br.com.treina.recife.sgp.api.repository.TarefaRepository;
 public class TarefaService {
     @Autowired
     private TarefaRepository tarefaRepository;
-    public List<Tarefa> listarProjetos(){
+    public List<Tarefa> listarTarefas(){
         return tarefaRepository.findAll();
     }
 
-    public Optional<Tarefa> obterDadosDoProjeto(Long id){
+    public Optional<Tarefa> obterDadosDaTarefa(Long id){
         return tarefaRepository.findById(id);
     }
 

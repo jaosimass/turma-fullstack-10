@@ -34,4 +34,8 @@ public class ProjetoService {
         projetoRepository.deleteById(id);
     }
 
+    public List <Projeto> listarProjetosDeUmUsuario (Long idUsuario){
+        return projetoRepository.findByResponsavel_Id(idUsuario);
+    }
+
 }
